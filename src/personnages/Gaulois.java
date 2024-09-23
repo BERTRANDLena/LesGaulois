@@ -35,7 +35,9 @@ public class Gaulois {
 	public static void main(String[] args) {
 		Gaulois asterix = new Gaulois("Astérix", 8);
 		Gaulois obelix = new Gaulois("Obélix", 20);
+		
 		System.out.println(asterix);
+		System.out.
 				
 	}
 
