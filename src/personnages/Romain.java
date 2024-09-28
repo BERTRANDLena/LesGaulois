@@ -14,18 +14,28 @@ public class Romain {
 	}
 
 	public void parler(String texte) {
-		System.out.println(prendreParole() + "« " + texte + "»");
+		System.out.println(prendreParole() + "ï¿½ " + texte + "ï¿½");
 	}
 
 	private String prendreParole() {
 		return "Le romain " + nom + " : ";
 	}
+
 	public void recevoirCoup(int forceCoup) {
 		force -= forceCoup;
 		if (force > 0) {
-			parler("Aïe");
+			parler("Aie");
 		} else {
 			parler("J'abandonne...");
 		}
 	}
+	
+	public static void main(String[] args) {
+		Romain minus = new Romain("Minus",6);
+		
+		System.out.println(minus);
+		minus.parler("Je vais gagner");
+		minus.recevoirCoup(5);
+	}
+
 }

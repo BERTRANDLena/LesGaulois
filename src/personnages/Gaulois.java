@@ -1,5 +1,7 @@
 package personnages;
 
+import java.awt.desktop.SystemEventListener;
+
 public class Gaulois {
 	private String nom;
 	private int force;
@@ -15,7 +17,7 @@ public class Gaulois {
 	}
 
 	public void parler(String texte) {
-		System.out.println(prendreParole() + "« " + texte + "»");
+		System.out.println(prendreParole() + "ï¿½ " + texte + "ï¿½");
 	}
 
 	private String prendreParole() {
@@ -23,7 +25,7 @@ public class Gaulois {
 	}
 
 	public void frapper(Romain romain) {
-		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + romain.getNom());
+		System.out.println(nom + " envoie un grand coup dans la machoire de " + romain.getNom());
 		romain.recevoirCoup(force / 3);
 	}
 
@@ -33,12 +35,18 @@ public class Gaulois {
 	}
 
 	public static void main(String[] args) {
-		Gaulois asterix = new Gaulois("Astérix", 8);
-		Gaulois obelix = new Gaulois("Obélix", 20);
 		
+		Gaulois asterix = new Gaulois("AstÃ©rix", 8);
+		Gaulois obelix = new Gaulois("ObÃ©lix", 20);
+
 		System.out.println(asterix);
-		System.out.
-				
+		System.out.println(obelix);
+		asterix.parler("Je vais gagner");
+
+		Romain romain1 = new Romain("Romain1", 9);
+
+		asterix.frapper(romain1);
+
 	}
 
-} 
+}
