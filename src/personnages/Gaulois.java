@@ -17,7 +17,7 @@ public class Gaulois {
 	}
 
 	public void parler(String texte) {
-		System.out.println(prendreParole() + "ï¿½ " + texte + "ï¿½");
+		System.out.println(prendreParole() + "<< " + texte + ">>");
 	}
 
 	private String prendreParole() {
@@ -32,7 +32,7 @@ public class Gaulois {
 	
 	public void boirePotion(int forcePotion) {
 		effetPotion = forcePotion;
-		parler("Merci Druide, je sens que ma force est " + effetPotion + " fois dÃ©cuplÃ©e.");
+		parler("Merci Druide, je sens que ma force est " + effetPotion + " fois décuplée.");
 		
 	}
 
@@ -42,8 +42,8 @@ public class Gaulois {
 	}
 
 	public static void main(String[] args) {
-		Gaulois asterix = new Gaulois("AstÃ©rix", 8);
-		Gaulois obelix = new Gaulois("ObÃ©lix", 20);
+		Gaulois asterix = new Gaulois("Astérix", 8);
+		Gaulois obelix = new Gaulois("Obélix", 20);
 
 		System.out.println(asterix);
 		System.out.println(obelix);
