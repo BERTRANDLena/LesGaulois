@@ -1,7 +1,5 @@
 package personnages;
 
-import java.awt.desktop.SystemEventListener;
-
 public class Gaulois {
 	private String nom;
 	private int force;
