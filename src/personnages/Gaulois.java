@@ -47,7 +47,7 @@ public class Gaulois {
 
 		System.out.println(asterix);
 		System.out.println(obelix);
-		asterix.parler("Je vais gagner");
+		asterix.parler("Bonjour");
 		asterix.boirePotion(5);
 
 		Romain romain1 = new Romain("Romain", 9);
