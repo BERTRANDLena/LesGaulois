@@ -37,7 +37,7 @@ public class Romain {
 	}
 
 	private boolean verifierForce() {
-		return force > 0 ;
+		return force > 0;
 	}
 
 	public void sEquiper(Equipement equipement) {
@@ -60,7 +60,6 @@ public class Romain {
 			System.out.println("problème dans le nombre d'équipement");
 			break;
 		}
-
 
 	}
 
